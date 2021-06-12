@@ -2,7 +2,7 @@ ARG TAG=34
 FROM registry.fedoraproject.org/fedora:${TAG}
 
 RUN dnf -y update && \
-  dnf -y install gcc-c++ cmake wget && \
+  dnf -y install gcc-c++ cmake wget fftw-devel && \
   dnf clean all
 
 RUN useradd -m -G wheel -u 1001 user
