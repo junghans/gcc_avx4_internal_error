@@ -13,4 +13,4 @@ RUN wget https://ftp.gromacs.org/pub/gromacs/gromacs-2019.6.tar.gz
 RUN tar -xvf gromacs-2019.6.tar.gz
 WORKDIR gromacs-2019.6
 RUN cmake -B builddir .
-RUN cmake --build build
+RUN cmake --build builddir
